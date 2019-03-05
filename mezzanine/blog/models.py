@@ -35,7 +35,7 @@ class BlogPost(Displayable, Ownable, RichText, AdminThumbMixin):
     class Meta:
         verbose_name = _("Blog post")
         verbose_name_plural = _("Blog posts")
-        ordering = ("-publish_date",)
+        ordering = ("-created",)
 
     def get_absolute_url(self):
         """
